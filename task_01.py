@@ -6,8 +6,8 @@ Created on Wed Apr 08 11:01:19 2015
 @author: aayeta
 """
 
-def sum_orders(customers, orders):
 
+def sum_orders(customers, orders):
     """a function to combine the two datasets into a single dictionary keyed by
        customer_id with the following fields in an inner dictionary
 
