@@ -9,13 +9,13 @@ Created on Wed Apr 08 11:01:19 2015
 
 def sum_orders(customers, orders):
     """a function to combine the two datasets into a single dictionary keyed by
-       customer_id with the following fields in an inner dictionary
+       customer_id
 
     Args:
         customers (dict): A dictionary of customers keyed by customer_id
         orders (dict): A dictionary of orders keyed by order id
     Return:
-        Return the combined dictionary of the two args.
+        Return the combined dictionary of the two args by customer_id.
 
     Examples:
 
@@ -60,7 +60,7 @@ def sum_orders(customers, orders):
         name = customers[order['customer_id']]['name']
         customerid = order['customer_id']
 
-        if customers.has_key(order['customer_id']):
+        if order['customer_id'] in customers.keys():
             if order['customer_id'] in new_dict:
 
                 total = order['total'] + new_dict[customerid]['total']
